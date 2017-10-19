@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
  Dong shuhan
- 27th september 2017
+19th October 2017
  --!>
   <html>
    <head>
@@ -20,27 +20,25 @@
   <script>
 	     var score = 0;
        function goToLocation(){
-       var
-       command=document.getElementById("userinputcommand").valve;
-       //Valid commands are cardinal directions: N, S, E, W, n, s, e, w if( command=="N"|| command=="n"){ 
-document.getElementById("message").value="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
+       var score = 0;
+       var command=document.getElementById("userinputcommand").valve;
+       //Valid commands are cardinal directions: N, S, E, W, n, s, e, w
+if( command=="N"|| command=="n"){ 
+document.getElementById("message").innerHTML="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
 }else if( command=="S"|| command=="s")
 
-
-document.getElementById("message").value="you lose your life by a accident"; 
+document.getElementById("message").innerHTML="you lose your life by a accident"; 
 }else If ( command=="E"|| command=="e")
-{ document.getElementById("message").value="you get a lot of wealth, then you get the world"; 
+{ document.getElementById("message").innerHTML="you get a lot of wealth, then you get the world"; 
 } else If ( command=="W"|| command=="w")
-document.getElementById("message").value="Wake up, it isnonly a game";
-
+document.getElementById("message").innerHTML="Wake up, it isnonly a game";
 } 
 else { 
-document.getElementById("message").value="Enter command 
-"'+command+"' is not valid command.";
-}
+document.getElementById("message").innerHTML="Enter command is not valid command.";
 scor+=5; 
 document.getElementById("myScore").innerHTML=score;
 }
+
 </script>
  <script>
     function btnNorth() {
@@ -63,7 +61,7 @@ document.getElementById("myScore").innerHTML=score;
 			score += 5;
         document.getElementById("myScore").innerHTML = score;
     	}
-	</script>
+</script>
 <br/>
 <textarea readonly id="message" name="message" 
 score; 
