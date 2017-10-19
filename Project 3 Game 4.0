@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+ Dong shuhan
+ 27th september 2017
+ --!>
+  <html>
+   <head>
+    <meta charset="utf-8">
+    <title> Life Game (T^T) </title>
+ <Style>
+    body {
+    Background-color: #56b896;
+    Background-size: 100% 100%;
+		
+     }
+  </Style>
+</head>
+<body> 
+  <h1>Life Game (T^T) </h1> 
+  script>
+	     var score = 0;
+       function go ToLocation(){
+       var
+       command=document.getElementById("userinputcommand").valve;
+       //Valid commands are cardinal directions: N, S, E, W, n, s, e, w if( command=="N"|| command="n"){ 
+document.getElementById("message").value="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
+}else if( command=="S"|| command="s")
+
+
+document.getElementById("message").value="you lose your life by a accident"; 
+}else If ( command=="E"|| command="e")
+{ document.getElementById("message").value="you get a lot of wealth, then you get the world"; 
+} else If ( command=="W"|| command="w")
+document.getElementById("message").value="Wake up, it isnonly a game";
+
+} 
+else { 
+document.getElementById("message").value="Enter command 
+"'+command+"' is not valid command.";
+}
+scor+=5; 
+document.getElementById("myScore").innerHTML=score;
+}
+</script>
+<br/>
+<textarea readonly id="message" name="message" 
+score; 
+rows="20" 
+cols="50"> If you do not choose, your life won't advance, but here is only a game. 
+ </textarea>
+ <br/>
+ <div>
+<input type="text" name="userinputcommand" 
+id="userinputcommand" /> 
+<button type="button" onClick="goToLocation();">Go to Location</button>
+</div>
+<p>  Life is a game all people are players or prayers you want to attend the  party  please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.</p> 
+<h3>Your score is <span id="myScore">0</span> points!</h3> 
+</body>
+</html> 
+		 
+                   
+	 
