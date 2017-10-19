@@ -33,7 +33,12 @@ Project 2 - Game v0.2.  CMPt
 	function btnWest() {
 		document.getElementById("message").value="wake up , it is only a game";
 	}
-	
+		var score = 0;
+		function Points() {
+			score += 5;
+        document.getElementById("myScore").innerHTML = score;
+    	}
+		</script>
 	</script>
     <br/>
          <textarea readonly id="message"
