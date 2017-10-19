@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+.<!DOCTYPE html>
+
 <!--
- Dong shuhan
+
+Dong shuhan
+
 19th October 2017
- --!>
+
+-->
 
 <html>
 
@@ -30,107 +34,113 @@ Background-size: 100% 100%;
 
 <h1>Life Game (T^T) </h1>
 
-<script type = "text/javascript">
-var North = false
-    var NorthEast = false
-    var East = false
-    var SouthEast = false
-	var South = false
-    var SouthWest = false
-	var West = false 
-    var NorthWest = false
-    
-	var score = 0
-	
-    // Global function for messaging to textbox
-		function updateDisplay(message) {
-				var textarea = document.getElementById("taBox");
-				textarea.value = message;
-			}
-        
-        
-
-        
-        function btnGo_click() {
-            var userText = document.getElementById("userInput").value;
-                if (userText === "N" || userText === "n") {
-						btnNorth_click();
-					} else if (userText === "S" || userText === "s") {
-						btnSouth_click();
-					} else if (userText === "E" || userText === "e") {
-						btnEast_click();
-					} else if (userText == "W" || userText === "w") {
-						btnWest_click();
-					} else {
-						var message = "Invalid Command only commands N, E, S, W are valid.";
-						updateDisplay(message);
-                       }
-            }
-	
-</script>
 <script>
 
 function goToLocation(){
 
-var score = 0;
+               var score = 0;
 
-var command=document.getElementById("userinputcommand").value;
+               var command=document.getElementById("userinputcommand").value;
 
-//Valid commands are cardinal directions: N, S, E, W, n, s, e
+               //Valid commands are cardinal directions: N, S, E, W, n, s, e,w
 
-if( command=="N"|| command=="n"){
+               if( command=="N"|| command=="n"){
 
-document.getElementById("message").innerHTML ="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
+                              document.getElementById("message").innerHTML ="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
 
-}else if( command=="S"|| command=="s"){
+               }else if( command=="S"|| command=="s"){
 
-document.getElementById("message").innerHTML ="you lose your life by a accident";
+                              document.getElementById("message").innerHTML ="you lose your life by a accident";
 
-}else if ( command=="E"|| command=="e"){
+               }else if ( command=="E"|| command=="e"){
 
-document.getElementById("message").innerHTML ="you get a lot of wealth, then you get the world";
+                              document.getElementById("message").innerHTML ="you get a lot of wealth, then you get the world";
 
-} else if ( command=="W"|| command=="w"){
+               } else if ( command=="W"|| command=="w"){
 
-document.getElementById("message").innerHTML ="Wake up, it isnonly a game";
+                              document.getElementById("message").innerHTML ="Wake up, it isnonly a game";
 
-}
+               }
 
-else {
+               else {
 
-document.getElementById("message").innerHTML ="Enter command is not valid command.";
+                              document.getElementById("message").innerHTML ="Enter command is not valid command.";
 
-}
+               }
 
-score+=5;
+               score+=5;
 
-document.getElementById("myScore").innerHTML=score;
+               document.getElementById("myScore").innerHTML=score;
 
 }
 
 </script>
+
 <script>
+
     function btnNorth() {
-	document.getElementById("message").value="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
-}	
+
+                              var message = "you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
+
+                              updateDisplay(message);
+
+                              //document.getElementById("message").value="you cut through the courtyard, past the empty granite benches, where you'd met your lover!";
+
+               }             
+
     function btnSouth() {
-	document.getElementById("message").value="you lose your life by a accident";	
-	}
-	
-	function btnEast()  {
-		document.getElementById("message").value="you get a lot of wealth, then you get the world";
-	}
-	
-	function btnWest() {
-		document.getElementById("message").value="wake up , it is only a game";
-	}
-		
+
+                              var message = "you lose your life by a accident";
+
+                              updateDisplay(message);
+
+                              //document.getElementById("message").value="you lose your life by a accident";
+
+               }
+
+              
+
+               function btnEast() {
+
+                              var message = "you get a lot of wealth, then you get the world";
+
+                              updateDisplay(message);
+
+                              //document.getElementById("message").value="you get a lot of wealth, then you get the world";
+
+               }
+
+              
+
+               function btnWest() {
+
+                              var message = "wake up , it is only a game";
+
+                              updateDisplay(message);
+
+                              //document.getElementById("message").value="wake up , it is only a game";
+
+               }
+
+                             
+
                 var score = 0;
-		function Points() {
-			score += 5;
+
+                              function Points() {
+
+                                             score += 5;
+
         document.getElementById("myScore").innerHTML = score;
-    	}
-	</script>
+
+               }
+
+               function updateDisplay(message){
+
+                              document.getElementById("message").value=message;
+
+               }             
+
+               </script>
 
 <br/>
 
@@ -152,17 +162,24 @@ cols="50"> If you do not choose, your life won't advance, but here is only a gam
 
 id="userinputcommand" />
 
-<button type="button" onclick="goToLocation()">Go to Location</button>
+<button type="button" onClick="goToLocation()">Go to Location</button>
 
 </div>
+
 <br/>
+
       <button type="button" onClick="btnNorth(); Points (); this.onclick=null;">North</button>
-		
-		<button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
-		
-		<button type="button" onClick="btnEast(); Points ();this.onclick=null;">East</button>
- 
+
+                             
+
+                              <button type="button" onClick="btnSouth(); Points ();this.onclick=null;">South</button>
+
+                             
+
+                              <button type="button" onClick="btnEast(); Points ();this.onclick=null;">East</button>
+
                 <button type="button" onClick="btnWest(); Points ();this.onclick=null;">West</button>
+
       <br/>
 
 <p> Life is a game all people are players or prayers you want to attend the party please touch <a href = "mailto:shuhan.dong1@marist.edu"> here.</p>
@@ -171,4 +188,4 @@ id="userinputcommand" />
 
 </body>
 
-</html>
+</html
