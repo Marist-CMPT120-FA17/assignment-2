@@ -29,6 +29,44 @@ Background-size: 100% 100%;
 <body>
 
 <h1>Life Game (T^T) </h1>
+var North = false
+    var NorthEast = false
+    var East = false
+    var SouthEast = false
+	var South = false
+    var SouthWest = false
+	var West = false 
+    var NorthWest = false
+    
+	var score = 0
+	
+    // Global function for messaging to textbox
+		function updateDisplay(message) {
+				var textarea = document.getElementById("taBox");
+				textarea.value = message;
+			}
+        
+        
+        
+    // User Commands
+        
+        function btnGo_click() {
+            var userText = document.getElementById("userInput").value;
+                if (userText === "N" || userText === "n") {
+						btnNorth_click();
+					} else if (userText === "S" || userText === "s") {
+						btnSouth_click();
+					} else if (userText === "E" || userText === "e") {
+						btnEast_click();
+					} else if (userText == "W" || userText === "w") {
+						btnWest_click();
+					} else {
+						var message = "Invalid Command only commands N, E, S, W are valid.";
+						updateDisplay(message);
+                       }
+            }
+	//LOCATIONS
+        //Go North
 
 <script>
 
